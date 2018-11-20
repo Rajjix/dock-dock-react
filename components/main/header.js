@@ -1,5 +1,5 @@
 import React from 'react';
-import Login from '../account/login';
+import Login from '../account/dialog';
 
 export default () => {
     return (
