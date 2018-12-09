@@ -7,3 +7,16 @@ before_install:
 
 script:
   - docker run rajjix/dock-dock-react npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "eu-central-1"
+  app: "dock-dock-react"
+  env: "DockDockReact-env"
+  bucket_name: "elasticbeanstalk-eu-central-1-546615561404"
+  bucket_path: "dock-dock-react"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
