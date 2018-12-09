@@ -11,6 +11,7 @@ class App extends Component {
           <h3>
             Learn CI/CD with Travis & Rajjix
           </h3>
+          <h6>Feature Stuff</h6>
         </header>
       </div>
     );
